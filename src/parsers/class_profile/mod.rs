@@ -1,0 +1,9 @@
+pub mod assignment_submit;
+pub mod class_forum;
+pub mod class_materials;
+pub mod course_evaluation;
+pub mod questionnaire_answer;
+pub mod quiz_answer;
+pub mod syllabus;
+pub mod top;
+pub mod web_note;

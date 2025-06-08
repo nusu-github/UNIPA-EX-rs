@@ -1,0 +1,52 @@
+[package]
+name = "unipa-ex"
+version = "0.1.0"
+authors = ["Shogo Ishigami <29514220+nusu-github@users.noreply.github.com>"]
+edition = "2021"
+description = "UNIVERSAL PASSPORT EXのHTMLページを解析するRust + WebAssemblyライブラリ"
+license = "Apache-2.0"
+repository = "https://github.com/nusu-github/UNIPA-EX-rs"
+homepage = "https://github.com/nusu-github/UNIPA-EX-rs"
+documentation = "https://docs.rs/unipa-ex"
+readme = "README.md"
+keywords = ["html-parser", "webassembly", "university", "scraping"]
+categories = ["parsing", "web-programming", "wasm"]
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = ["console_error_panic_hook"]
+
+[dependencies]
+# WebAssembly バインディング
+wasm-bindgen = "0.2.100"
+
+# エラーハンドリングとデバッグ支援
+console_error_panic_hook = { version = "0.1.7", optional = true }
+thiserror = "2"
+
+# HTML解析とデータ処理
+scraper = "0.23"
+regex-lite = "0.1.6"
+
+# シリアライゼーションとTypeScript型生成
+serde = { version = "1.0", features = ["derive"] }
+tsify = { version = "0.5", features = ["js"] }
+
+# メモリ最適化
+wee_alloc = { version = "0.4.5", optional = true }
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3.50"
+web-sys = { version = "0.3.77", features = ["console"] }
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "z"
+panic = 'abort'
+
+[profile.dev]
+opt-level = 0
+debug = true
