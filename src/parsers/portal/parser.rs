@@ -160,9 +160,9 @@ impl PortalParser {
                 let date_jigen_selector = Selector::parse(".date, .jigen")
                     .map_err(|e| ParseError::selector_creation_failed(".date, .jigen", &e.to_string()))?;
                 
-                // 授業情報（.jugyo, .kyoin, .kyositu）
-                let class_info_selector = Selector::parse(".jugyo, .kyoin, .kyositu")
-                    .map_err(|e| ParseError::selector_creation_failed(".jugyo, .kyoin, .kyositu", &e.to_string()))?;
+                // 授業情報（.jugyo, .kyoin, .kyoshitsu）
+                let class_info_selector = Selector::parse(".jugyo, .kyoin, .kyoshitsu")
+                    .map_err(|e| ParseError::selector_creation_failed(".jugyo, .kyoin, .kyoshitsu", &e.to_string()))?;
 
                 let mut entry = ScheduleEntry::default();
                 let mut has_content = false;
