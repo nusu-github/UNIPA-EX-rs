@@ -179,7 +179,7 @@ src/
 
 このプロジェクトは以下のライセンスの下で公開されています：
 
-- Apache License 2.0 ([LICENSE_APACHE](LICENSE_APACHE))
+- Apache License 2.0 ([LICENSE](LICENSE))
 
 ## 🤝 コントリビューション
 
@@ -193,7 +193,7 @@ src/
 ## 📞 サポート
 
 - バグ報告: [GitHub Issues](https://github.com/nusu-github/UNIPA-EX-rs/issues)
-- 機能要望: [GitHub Discussions](https://github.com/nusu-github/UNIPA-EX-rs/discussions)
+- 機能要望: [GitHub Issues](https://github.com/nusu-github/UNIPA-EX-rs/issues)
 
 ---
 
