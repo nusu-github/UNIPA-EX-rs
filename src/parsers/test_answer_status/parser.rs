@@ -417,7 +417,6 @@ impl TestAnswerStatusParserImpl {
             .replace("&#12488;", "ト")
             .replace("&#12479;", "タ")
             .replace("&#12452;", "イ")
-            .replace("&#12488;", "ト")
             .replace("&#12523;", "ル")
             .replace("&#25480;", "授")
             .replace("&#26989;", "業")
