@@ -146,14 +146,6 @@ cargo test
 wasm-pack test --headless --firefox
 ```
 
-### 開発サーバー
-
-```bash
-# 開発用サーバーを起動（例）
-cd www
-npm install
-npm start
-```
 
 ## 📁 プロジェクト構造
 
