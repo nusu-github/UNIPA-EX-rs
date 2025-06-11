@@ -51,6 +51,9 @@ impl PageParser<TeacherTimetableList> for ListViewParser {
     const PAGE_TYPE: &'static str = "教員時間割表 表示形式：一覧";
 
     fn parse_document(&self, document: &Html) -> Result<TeacherTimetableList, ParseError> {
-        todo!()
+        let _ = document; // suppress unused variable warnings
+        Err(ParseError::NotImplemented {
+            operation: "Teacher timetable list view parsing".to_string(),
+        })
     }
 }

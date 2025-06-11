@@ -43,6 +43,9 @@ impl PageParser<CourseTimetableCalendar> for CalendarViewParser {
     const PAGE_TYPE: &'static str = "学科開講一覧 表示形式：カレンダー";
 
     fn parse_document(&self, document: &Html) -> Result<CourseTimetableCalendar, ParseError> {
-        todo!()
+        let _ = document; // suppress unused variable warnings
+        Err(ParseError::NotImplemented {
+            operation: "Course timetable calendar view parsing".to_string(),
+        })
     }
 }
