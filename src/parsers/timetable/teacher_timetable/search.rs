@@ -89,6 +89,9 @@ impl PageParser<TeacherSearchPage> for TeacherSearchParser {
     const PAGE_TYPE: &'static str = "教員時間割検索";
 
     fn parse_document(&self, document: &Html) -> Result<TeacherSearchPage, ParseError> {
-        todo!()
+        let _ = document; // suppress unused variable warnings
+        Err(ParseError::NotImplemented {
+            operation: "Teacher timetable search parsing".to_string(),
+        })
     }
 }

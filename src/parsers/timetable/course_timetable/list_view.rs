@@ -85,12 +85,18 @@ impl ListViewParser {
 
     /// 学期情報を抽出する
     fn parse_semester_info(&self, document: &Html) -> Result<(u32, String), ParseError> {
-        todo!()
+        let _ = document; // suppress unused variable warnings
+        Err(ParseError::NotImplemented {
+            operation: "Course timetable semester info parsing".to_string(),
+        })
     }
 
     /// 学生情報ラベルを抽出する
     fn parse_student_info_label(&self, document: &Html) -> Result<String, ParseError> {
-        todo!()
+        let _ = document; // suppress unused variable warnings
+        Err(ParseError::NotImplemented {
+            operation: "Course timetable student info label parsing".to_string(),
+        })
     }
 }
 
